@@ -10,7 +10,6 @@ div img {
 body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 1fr 0.05fr;
     justify-items: center;
 }
 
@@ -20,10 +19,17 @@ body {
     margin-bottom: 10px;
 }
 
-#submit {
-    display: none;
+.effects {
+    visibility: hidden;
 }
 
+.effects_visible {
+    visibility: visible;
+}
+
+#thumb-bar img{
+    vertical-align: bottom;
+}
 
 @media screen and (max-width: 640px) {
     body {
@@ -32,11 +38,17 @@ body {
         width: 80%;
     }
     
-    #submit span{
+    .effects span{
         display: inline-block;
       }
 }
 
 @media screen and (min-width: 640px) {
+    .displayed-img {
+        max-width: 640px;
+    }
 
+    #thumb-bar {
+        max-width: 640px;
+    }
 }
