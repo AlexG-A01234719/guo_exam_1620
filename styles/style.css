@@ -1,3 +1,42 @@
 div img {
     width: 20%;
 }
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr 0.05fr;
+    justify-items: center;
+}
+
+.displayed-img {
+    width: 100%; 
+    height:auto; 
+    margin-bottom: 10px;
+}
+
+#submit {
+    display: none;
+}
+
+
+@media screen and (max-width: 640px) {
+    body {
+        max-width: 640px;
+        margin: auto;
+        width: 80%;
+    }
+    
+    #submit span{
+        display: inline-block;
+      }
+}
+
+@media screen and (min-width: 640px) {
+
+}
